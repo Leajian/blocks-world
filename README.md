@@ -1,6 +1,25 @@
 # blocks-world
 My solution to BW20019 assignment for Artificial Intelligence subject in UoM.
 
+## Lazy problem description
+We have an initial state, which it looks like this...  
+             &nbsp;\_  
+            |__A__|&nbsp;&nbsp;\_  
+            |__B__|&nbsp;|__C__|  
+            ======== <-- __table__  
+  
+We have a goal state, which it looks like this...  
+             &nbsp;\_  
+            |__B__|  
+            |__C__|  
+            |__A__|  
+            ======== <-- __table__  
+Now to reach from initial state to goal state, we need to perform some steps. The algorithms do that their own way.
+So, a solution would be:
+1. Move A on table
+2. Move C on A
+3. Move B on C
+
 ### Usage
 `python3 solution.py <algorithm> <problem_file_name.pddl> [solution_file_name]`
 
